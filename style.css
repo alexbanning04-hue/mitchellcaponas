@@ -1,0 +1,60 @@
+/* style.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: white;
+  color: black;
+}
+
+.container {
+  display: flex; /* Sections side by side horizontally */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent main page scrolling */
+}
+
+.scroll-section {
+  flex: 1; /* Each section takes equal width */
+  height: 100%;
+  overflow-y: auto; /* Enable independent vertical scroll */
+  padding: 20px;
+  box-sizing: border-box;
+  border-left: 1px solid #ccc; /* Optional visual separation */
+}
+
+#section1 { background-color: #e8eeed; }
+#section2 { background-color: #dbf0f9; }
+#section3 { background-color: #e8eeed; }
+
+.container {
+  height: 100vh;
+}
+
+.scroll-section {
+  height: 33.33%; /* One-third of screen */
+  overflow-y: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+h1 {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
