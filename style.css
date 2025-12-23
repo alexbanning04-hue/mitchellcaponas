@@ -21,7 +21,7 @@ body {
   flex: 1; /* Each section takes equal width */
   height: 100%;
   overflow-y: auto; /* Enable independent vertical scroll */
-  padding: 20px;
+  padding: 24px;
   box-sizing: border-box;
   border-left: 1px solid #ccc; /* Optional visual separation */
 }
@@ -31,13 +31,17 @@ body {
 #section3 { background-color: white; }
 
 .container {
+  display: flex;
   height: 100vh;
+  overflow: hidden;
 }
 
 .scroll-section {
-  height: 33.33%; /* One-third of screen */
+  height: 100vh;      /* FULL screen height */
   overflow-y: auto;
+  flex: 1;            /* Equal column widths */
 }
+
 
 header {
   display: flex;
@@ -60,3 +64,23 @@ nav a {
   font-size: 14px;
 }
 
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;   /* Stack sections vertically */
+    height: auto;             /* Let page scroll normally */
+  }
+
+  .scroll-section {
+    height: auto;             /* Section height fits content */
+    min-height: 100vh;        /* Each section still fills screen */
+    overflow-y: visible;      /* Disable inner scroll */
+  }
+}
+@media (max-width: 768px) {
+  .scroll-section {
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+}
