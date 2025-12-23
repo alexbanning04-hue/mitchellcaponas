@@ -76,6 +76,28 @@ nav a {
   opacity: 0.7;
 }
 
+.pdf-thumb {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  max-width: 260px;
+}
+
+.pdf-thumb img {
+  width: 100%;
+  display: block;
+  border: 1px solid #ccc;
+}
+
+.pdf-thumb span {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.pdf-thumb:hover img {
+  opacity: 0.85;
+}
 
 
 @media (max-width: 768px) {
