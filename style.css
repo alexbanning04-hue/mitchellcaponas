@@ -127,7 +127,7 @@ nav a {
 
 :root {
   --font-main: "Inter", Helvetica, Arial, sans-serif;
-  --font-size-body: 15px;
+  --font-size-body: 15x;
   --line-height-body: 1.55;
 }
 
@@ -174,4 +174,15 @@ a:hover {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
+}
+
+.site-note {
+  font-size: 0.65rem;
+  color: #999;
+  opacity: 0.7;
+}
+
+.site-note a {
+  color: inherit;
+  text-decoration: underline;
 }
